@@ -8,15 +8,15 @@ import images from "./content.json"
 
 function App() {
   
-  // React.useEffect(() => {
-  //   const script = document.createElement('script');
-  //   script.src = "./assets/js/jquery.min.js";
-  //   script.async = true;
-  //   document.body.appendChild(script);
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   }
-  // }, []);
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "./assets/js/jquery.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
   
   React.useEffect(() => {
     const script = document.createElement('script');
